@@ -1,0 +1,5 @@
+valor = float(input('Diga o valor em Reais que você quer converter pra dólar!'))
+dólar = float(3.75)
+dc = float(2.87)
+print('Com R${} você pode comprar US${:.2f}!'.format(valor, (valor/dólar)), end='')
+print('Com R${} você pode comprar C${:.2f}!'.format(valor, (valor/dc)))

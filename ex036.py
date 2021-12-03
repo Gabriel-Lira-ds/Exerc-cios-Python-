@@ -1,0 +1,16 @@
+print('=^='*14)
+renda = float(input ('Qual a sua renda mensal? '))
+print('=^='*14)
+casa = float(input('Qual o valor da casa? '))
+tempo = int(input('Quantos anos de financiamento?'))
+porc = (renda*0.3)
+prestação = casa/(12*tempo)
+print('A casa de R${} paga em {} anos, a prestacão ira custa R${:.2f}! '.format(casa, tempo, prestação))
+if prestação>porc:
+	print('-=-'*14)
+	print('\033[1;31mfinanciamento negado!\033[m')
+	print('-=-'*14)
+else:
+	print('-=-'*14)
+	print('\033[1;32mSeu financiamento foi aprovado!\033[m')
+	print('=-='*14)

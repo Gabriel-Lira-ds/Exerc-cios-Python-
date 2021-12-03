@@ -1,0 +1,5 @@
+n = int(input('diga um número: '))
+print('o seu dobro vale {}!'.format(n*2))
+print('o seu triplo vale {}!'.format(n*3))
+print('sua raiz quadrada vale {}!'.format(n**(1/2)))
+print('sua raiz cúbica vale {:.3f}!'.format(n**(1/3)))
